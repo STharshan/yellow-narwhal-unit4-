@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+@import 'swiper/css/autoplay';
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; 
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  overflow-y: auto;
+}
+
+/* Create an animation for scrolling */
+@keyframes scroll-x {
+  0% {
+    transform: translateX(100%); /* Start from the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the left */
+  }
+}
+
+/* Apply the animation only for small screens (less than 500px) */
+@media (max-width: 970px) {
+  .animate-scroll-x {
+    display: flex;
+    animation: scroll-x 30s linear infinite; /* 15s duration, can be adjusted */
+    white-space: nowrap; /* Prevent wrapping of items */
+  }
+}
