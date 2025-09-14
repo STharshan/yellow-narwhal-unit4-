@@ -53,7 +53,7 @@ export default function Navbar() {
             <FaLinkedinIn />
           </a>
           <a
-            href="https://www.instagram.com/YourUsername"
+            href="https://www.instagram.com/unit_three_mots?igsh=ZWFlZThjNTRrYWE%3D"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-pink-500 transition"
@@ -97,12 +97,12 @@ export default function Navbar() {
               <div>
 
                 <a
-                  href="https://wa.me/24582145621456"
+                  href="https://wa.me/447526227041"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-bold text-white text-sm hover:text-green-400 transition"
                 >
-                  +24582145621456
+                  +44 7526 227041
                 </a>
               </div>
             </div>
@@ -142,12 +142,12 @@ export default function Navbar() {
               <span className="text-gray-400">Call Us:</span>
               <div>
                 <a
-                  href="https://wa.me/24582145621456"
+                  href="https://wa.me/447526227041"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-bold text-white text-sm hover:text-green-400 transition"
                 >
-                  +24582145621456
+                  +44 7526 227041
                 </a>
               </div>
             </div>

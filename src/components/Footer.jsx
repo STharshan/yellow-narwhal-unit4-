@@ -1,5 +1,5 @@
 // src/components/Footer.jsx
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt} from "react-icons/fa"; // Use FaAngleRight here
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa"; // Use FaAngleRight here
 import { FaAnglesRight } from "react-icons/fa6";
 
 export default function Footer() {
@@ -19,8 +19,10 @@ export default function Footer() {
           <h3 className="text-3xl font-semibold mb-2">About Company</h3>
           <div className="w-8 h-0.5 bg-blue-700 mb-4"></div>
           <p className="text-lg text-gray-400 mb-4 leading-relaxed">
-            Centric applications productize before front end vortals visualize
-            front end is results and value added
+            Based in the heart of Leicester, Unit Four specialises in enhancing vehicle performance, 
+            reliability, and efficiency. From remapping and diagnostics to resolving DPF, EGR, AdBlue, 
+            and Stop-Start issues, we deliver expert solutions with precision and care. Driven by 
+            performance and powered by passion, we treat every car like our own
           </p>
           <p className="font-semibold text-gray-300 uppercase">We Are Available</p>
           <p className="text-gray-300 mb-4">Mon-Sat: 09.00 am to 6.30 pm</p>
@@ -73,10 +75,10 @@ export default function Footer() {
             <div>
               <p className="mt-0.5">
                 <a
-                  href="tel:+8812345698231"
+                  href="tel:0116 2669749"
                   className="text-white hover:text-green-400 transition"
                 >
-                  +88 12345 6987 231
+                  0116 2669749
                 </a>
               </p>
             </div>
@@ -105,12 +107,12 @@ export default function Footer() {
             <div>
               <p className="mt-0.5">
                 <a
-                  href="https://www.google.com/maps/place/2561+Helano+Street,+NY"
+                  href="https://www.google.com/maps?q=Unit+3+Wesley+St,+Leicester+LE4+5QG"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-blue-400 transition"
                 >
-                  2561 Helano Street, NY
+                  Unit 3 Wesley St, Leicester LE4 5QG
                 </a>
               </p>
             </div>
@@ -122,10 +124,10 @@ export default function Footer() {
       <div className="border-t font-semibold border-gray-800 mt-20 pt-6 text-center text-lg text-gray-400">
         Copyright © 2025{" "}
         <a
-          href="https://your-website-link.com" // Replace with your desired link
+          href="https://www.ansely.co.uk/" // Replace with your desired link
           target="_blank"
           rel="noopener noreferrer"
-          className="font-semibold text-white hover:text-blue-700 transition"
+          className="font-semibold text-white hover:text-blue-700 transition hover:underline"
         >
           Ansely
         </a>

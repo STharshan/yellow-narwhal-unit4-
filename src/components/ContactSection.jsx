@@ -2,7 +2,7 @@
 import {
   FaFacebookF,
   FaTwitter,
-  FaPinterest,
+  FaInstagram,
   FaLinkedinIn,
   FaEnvelopeOpenText,
 } from "react-icons/fa";
@@ -38,12 +38,12 @@ export default function ContactSection() {
               <div>
                 <p className="text-sm text-gray-500">Phone Call</p>
                 <a
-                  href="https://wa.me/123907555101"
+                  href="tel:0116 2669749"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-semibold text-black hover:text-green-600 transition"
+                  className="font-semibold text-black hover:text-blue-600 transition"
                 >
-                  +123 (907) 555-101
+                  0116 2669749
                 </a>
               </div>
             </div>
@@ -74,12 +74,12 @@ export default function ContactSection() {
               <div>
                 <p className="text-sm text-gray-500">Location</p>
                 <a
-                  href="https://www.google.com/maps/place/Inglewood,+Maine+98380"
+                  href="https://www.google.com/maps?q=Unit+3+Wesley+St,+Leicester+LE4+5QG"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-semibold text-black hover:text-red-600 transition"
+                   className="font-semibold text-black hover:text-blue-600 transition"
                 >
-                  Inglewood, Maine 98380
+                  Unit 3 Wesley St, Leicester LE4 5QG
                 </a>
               </div>
             </div>
@@ -107,12 +107,12 @@ export default function ContactSection() {
               <FaTwitter className="text-xl" />
             </a>
             <a
-              href="https://pinterest.com/YourPage"
+              href="https://www.instagram.com/unit_three_mots?igsh=ZWFlZThjNTRrYWE%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-red-600 hover:text-white transition"
             >
-              <FaPinterest className="text-xl" />
+              <FaInstagram className="text-xl" />
             </a>
             <a
               href="https://linkedin.com/in/YourProfile"
