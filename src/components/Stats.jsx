@@ -3,7 +3,7 @@ export default function Stats() {
     {
       icon: {
         default: "/counter-1.svg",
-        hover: "/icons/user-hover.png",
+        hover: "/counter.png",
       },
       value: "500+",
       label: "Cars Repaired",
@@ -11,7 +11,7 @@ export default function Stats() {
     {
       icon: {
         default: "/service-1.svg",
-        hover: "/icons/cogs-hover.png",
+        hover: "/service.png",
       },
       value: "10+",
       label: "Years in Business",
@@ -19,7 +19,7 @@ export default function Stats() {
     {
       icon: {
         default: "/car-1.svg",
-        hover: "/icons/crash-hover.png",
+        hover: "/car.png",
       },
       value: "24+",
       label: "Hour Turnaround",
@@ -27,7 +27,7 @@ export default function Stats() {
     {
       icon: {
         default: "/save-1.svg",
-        hover: "/icons/star-hover.png",
+        hover: "/save.png",
       },
       value: "4.9+",
       label: "Customer Rating",

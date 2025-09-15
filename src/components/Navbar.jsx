@@ -16,8 +16,8 @@ export default function Navbar() {
         <div className="hidden md:flex flex-row items-center gap-10">
           <div className="flex items-center gap-1">
             <MdEmail className="text-lg" />
-            <a href="mailto:support@gmail.com" className="hover:text-blue-400 transition">
-              support@gmail.com
+            <a href="mailto:needhelprepair@gmail.com" className="hover:text-blue-400 transition">
+              needhelprepair@gmail.com
             </a>
           </div>
           <div className="flex items-center gap-1">
@@ -29,7 +29,7 @@ export default function Navbar() {
         {/* Right section (social icons always visible) */}
         <div className="flex items-center gap-4 mt-2 md:mt-0 text-2xl">
           <a
-            href="https://www.facebook.com/YourPage"
+            href="https://www.facebook.com/@unitthreemots?_rdr"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-600 transition"

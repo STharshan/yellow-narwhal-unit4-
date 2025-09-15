@@ -35,9 +35,11 @@ export default function Hero() {
                 <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                     Unleashing Your Engine’s Full Potential
                 </h1>
-                <button className="mt-6 bg-blue-700 hover:bg-blue-600 cursor-pointer text-white px-8 py-4 rounded-md font-semibold shadow-lg">
-                    GET MORE INFO
-                </button>
+                <a href="tel:01162669749">
+                    <button className="mt-6 bg-blue-700 hover:bg-blue-600 uppercase cursor-pointer text-white px-8 py-4 rounded-md font-semibold shadow-lg">
+                        Call us today
+                    </button>
+                </a>
             </div>
         </div>
     );

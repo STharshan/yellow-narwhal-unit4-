@@ -91,7 +91,7 @@ export default function ContactSection() {
           <p className="font-semibold mb-3 text-lg">Follow Us</p>
           <div className="flex items-center gap-4">
             <a
-              href="https://www.facebook.com/YourPage"
+              href="https://www.facebook.com/@unitthreemots?_rdr"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-blue-600 hover:text-white transition"
@@ -110,7 +110,7 @@ export default function ContactSection() {
               href="https://www.instagram.com/unit_three_mots?igsh=ZWFlZThjNTRrYWE%3D"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-red-600 hover:text-white transition"
+              className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-pink-600 hover:text-white transition"
             >
               <FaInstagram className="text-xl" />
             </a>
