@@ -1,6 +1,6 @@
-// src/components/Footer.jsx
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa"; // Use FaAngleRight here
 import { FaAnglesRight } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   // Function to handle quicklink click and scroll to section
@@ -13,15 +13,15 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#0F1116] text-white pt-16 pb-6 px-4 md:px-10">
-      <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"> {/* Adjusted gap here */}
         {/* About Company */}
         <div className="mb-8 md:mb-0">
           <h3 className="text-3xl font-semibold mb-2">About Company</h3>
           <div className="w-8 h-0.5 bg-blue-700 mb-4"></div>
           <p className="text-lg text-gray-400 mb-4 leading-relaxed">
-            Based in the heart of Leicester, Unit Four specialises in enhancing vehicle performance, 
-            reliability, and efficiency. From remapping and diagnostics to resolving DPF, EGR, AdBlue, 
-            and Stop-Start issues, we deliver expert solutions with precision and care. Driven by 
+            Based in the heart of Leicester, Unit Four specialises in enhancing vehicle performance,
+            reliability, and efficiency. From remapping and diagnostics to resolving DPF, EGR, AdBlue,
+            and Stop-Start issues, we deliver expert solutions with precision and care. Driven by
             performance and powered by passion, we treat every car like our own
           </p>
           <p className="font-semibold text-gray-300 uppercase">We Are Available</p>
@@ -35,12 +35,12 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div className="mb-8 md:mb-0">
+        <div className="mb-8 md:mb-0 lg:ml-20">
           <h3 className="text-3xl font-semibold mb-2">Quick link</h3>
           <div className="w-6 h-0.5 bg-blue-700 mb-4"></div>
           <ul className="space-y-3 text-lg text-gray-400">
             <li
-              className="hover:text-blue-600 transition duration-300 cursor-pointer "
+              className="hover:text-blue-600 transition duration-300 cursor-pointer"
               onClick={() => handleQuickLinkClick("about")} // Scroll to About section
             >
               <FaAnglesRight className="inline-block mr-2" />
@@ -59,6 +59,20 @@ export default function Footer() {
             >
               <FaAnglesRight className="inline-block mr-2" />
               Contact Us
+            </li>
+          </ul>
+        </div>
+
+        {/* Company Policy */}
+        <div className="mb-8 md:mb-0">
+          <h3 className="text-3xl font-semibold mb-2">Company Policy</h3>
+          <div className="w-8 h-0.5 bg-blue-700 mb-4"></div>
+          <ul className="space-y-4">
+            <li>
+              <Link to="/privacy-policy" className="hover:text-blue-600 transition duration-300 cursor-pointer ">Privacy Policy</Link>
+            </li>
+            <li>
+              <Link to="/terms-conditions" className="hover:text-blue-600 transition duration-300 cursor-pointer ">Terms & Conditions</Link>
             </li>
           </ul>
         </div>

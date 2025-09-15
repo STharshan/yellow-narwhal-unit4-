@@ -1,28 +1,25 @@
-import About from "./components/About"
-import ContactSection from "./components/ContactSection"
-import Footer from "./components/Footer"
-import Hero from "./components/Hero"
-import ImageCarousel from "./components/ImageCarousel"
-import Navbar from "./components/Navbar"
-import Services from "./components/Services"
-import Stats from "./components/Stats"
-import WhyChooseUs from "./components/WhyChooseUs"
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import TermsConditions from "./components/Term";
+import Home from "./pages/Home";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import ScrollToTop from "./components/ScrollTotop";
 
 function App() {
-
   return (
-    <>
+    <Router>
+      <ScrollToTop />
       <Navbar />
-      <Hero />
-      <About />
-      <ImageCarousel />
-      <Services />
-      <WhyChooseUs />
-      <Stats />
-      <ContactSection />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/terms-conditions" element={<TermsConditions />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      </Routes>
       <Footer />
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;
