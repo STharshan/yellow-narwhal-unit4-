@@ -1,4 +1,5 @@
 // src/components/ContactSection.jsx
+import { useEffect } from "react";
 import {
   FaFacebookF,
   FaTwitter,
@@ -8,30 +9,46 @@ import {
 } from "react-icons/fa";
 import { LuAlignRight, LuPhoneCall } from "react-icons/lu";
 import { PiMapPinLineDuotone } from "react-icons/pi";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function ContactSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false, // allows animation on scroll up & down
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
     <section
       id="contact"
       className="scroll-mt-20 w-full py-16 px-4 md:px-10 bg-white text-black"
+      data-aos="fade-up"
     >
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Left Side */}
-        <div>
-          <div className="flex items-center gap-2 text-blue-700 font-semibold uppercase tracking-wider mb-2">
+        <div data-aos="fade-right">
+          <div
+            className="flex items-center gap-2 text-blue-700 font-semibold uppercase tracking-wider mb-2"
+            data-aos="fade-down"
+          >
             <LuAlignRight className="text-blue-700 text-lg" />
             Contact Us
           </div>
 
-          <h2 className="text-5xl font-bold mb-4">Get In Touch</h2>
-          <p className="mb-8">
+          <h2 className="text-5xl font-bold mb-4" data-aos="fade-up">
+            Get In Touch
+          </h2>
+          <p className="mb-8" data-aos="fade-up" data-aos-delay="100">
             is a phrase used to encourage communication, often between
             individuals or businesses, to connect or resolve issues.
           </p>
 
           <div className="space-y-6">
             {/* Phone */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4" data-aos="fade-right" data-aos-delay="200">
               <div className="bg-pink-100 p-5 rounded-full text-blue-500">
                 <LuPhoneCall className="text-3xl" />
               </div>
@@ -49,8 +66,7 @@ export default function ContactSection() {
             </div>
 
             {/* Email */}
-            {/* Email */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4" data-aos="fade-right" data-aos-delay="300">
               <div className="bg-pink-100 p-4 rounded-full text-blue-500">
                 <FaEnvelopeOpenText className="text-3xl" />
               </div>
@@ -65,9 +81,8 @@ export default function ContactSection() {
               </div>
             </div>
 
-
             {/* Location */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4" data-aos="fade-right" data-aos-delay="400">
               <div className="bg-pink-100 p-4 rounded-full text-blue-500">
                 <PiMapPinLineDuotone className="text-3xl" />
               </div>
@@ -77,7 +92,7 @@ export default function ContactSection() {
                   href="https://www.google.com/maps?q=Unit+3+Wesley+St,+Leicester+LE4+5QG"
                   target="_blank"
                   rel="noopener noreferrer"
-                   className="font-semibold text-black hover:text-blue-600 transition"
+                  className="font-semibold text-black hover:text-blue-600 transition"
                 >
                   Unit 3 Wesley St, Leicester LE4 5QG
                 </a>
@@ -88,8 +103,10 @@ export default function ContactSection() {
           <div className="h-px bg-gray-200 my-8"></div>
 
           {/* Social Media */}
-          <p className="font-semibold mb-3 text-lg">Follow Us</p>
-          <div className="flex items-center gap-4">
+          <p className="font-semibold mb-3 text-lg" data-aos="fade-up">
+            Follow Us
+          </p>
+          <div className="flex items-center gap-4" data-aos="zoom-in" data-aos-delay="200">
             <a
               href="https://www.facebook.com/@unitthreemots?_rdr"
               target="_blank"
@@ -126,7 +143,7 @@ export default function ContactSection() {
         </div>
 
         {/* Right Side (Contact Form) */}
-        <div className="bg-gray-100 p-6 md:p-10 rounded-md">
+        <div className="bg-gray-100 p-6 md:p-10 rounded-md" data-aos="fade-left">
           <h3 className="text-xl font-bold mb-6">Send A Message</h3>
           <form className="space-y-4">
             <input

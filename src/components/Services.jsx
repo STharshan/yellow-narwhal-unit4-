@@ -1,9 +1,21 @@
-// src/components/Services.jsx
 
+// src/components/Services.jsx
+import { useEffect } from "react";
 import { LuAlignLeft, LuAlignRight } from "react-icons/lu";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Services() {
-  const cards = [
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false, // allows animation on scroll up & down
+      easing: "ease-in-out",
+    });
+  }, []);
+
+  
+const cards = [
     {
       title: "DPF Solutions",
       image: "/engine.webp",
@@ -73,8 +85,12 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="scroll-mt-20 bg-[#0F1116] text-white py-16 px-4 md:px-10">
-      <div className="text-center mb-12 ">
+    <section
+      id="services"
+      className="scroll-mt-20 bg-[#0F1116] text-white py-16 px-4 md:px-10"
+      data-aos="fade-up"
+    >
+      <div className="text-center mb-12" data-aos="fade-down">
         <div className="flex justify-center items-center gap-2 mb-2">
           <LuAlignRight className="text-blue-700" />
           <p className="uppercase font-semibold tracking-wider text-center">
@@ -83,7 +99,8 @@ export default function Services() {
           <LuAlignLeft className="text-blue-700" />
         </div>
         <h2 className="text-3xl md:text-5xl font-bold mt-2 leading-snug max-w-7xl mx-auto">
-          Precision Tuning. Expert Repairs. Maximum Performance. Everything Your Car Needs, All in One Place
+          Precision Tuning. Expert Repairs. Maximum Performance. Everything Your
+          Car Needs, All in One Place
         </h2>
       </div>
 
@@ -92,6 +109,8 @@ export default function Services() {
           <div
             key={index}
             className="bg-white text-black rounded-lg overflow-hidden shadow-md group"
+            data-aos="fade-up"
+            data-aos-delay={index * 100} // stagger effect
           >
             <img
               src={card.image}
@@ -100,7 +119,9 @@ export default function Services() {
             />
             <div className="p-6 h-60">
               <h3 className="text-2xl font-semibold mb-2">{card.title}</h3>
-              <p className="leading-relaxed mt-5 text-lg">{card.description}</p>
+              <p className="leading-relaxed mt-5 text-lg">
+                {card.description}
+              </p>
             </div>
           </div>
         ))}
@@ -108,3 +129,5 @@ export default function Services() {
     </section>
   );
 }
+
+
