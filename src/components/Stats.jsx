@@ -1,4 +1,15 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function Stats() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,  // animation duration
+      once: false,    // keep animating on scroll up and down
+    });
+  }, []);
+
   const stats = [
     {
       icon: {
@@ -43,6 +54,8 @@ export default function Stats() {
             <div
               key={index}
               className="group flex items-center gap-4 px-6 py-6 w-full md:w-auto justify-center text-center border-r-2 border-gray-700 last:border-r-0"
+              data-aos="fade-up"
+              data-aos-delay={index * 150} // stagger effect
             >
               {/* Image Container */}
               <div className="relative w-18 h-18 shrink-0 bg-[#1F2127] rounded-full flex items-center justify-center overflow-hidden mb-4 md:mb-0">
